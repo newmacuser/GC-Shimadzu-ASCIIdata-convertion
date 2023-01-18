@@ -1,2 +1,3 @@
-# GC-Shimadzu-ASCIIdata-convertion
-This script can be used for a quick data re-organization from the raw GC ASCIIdata output.
+# Reformatting ASCIIData output of SCFAs to a summary table
+## Purpose:
+This is the tutorial for parsing concentration information of SCFAs from Shimadzu GC ASCII data output using the updated methods that measures 14 compounds. (following Miguel’s data analysis protocol [https://purdue.app.box.com/folder/131931315173] to obtain the raw ASCIIData output). The output summary table contains 15 columns with headers of: “SampleID”, "Acetone", "Methanol", "2-Propanol", "Ethanol", "1-butanol", “Acetate”, “Propionate”, “Isobutyrate”, “Butyrate”, “Isovalerate”, "Valerate", “Isocorporate”, "Hexanoic acid", "Heptanoic acid" and with concentration values for each SampleID.
