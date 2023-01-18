@@ -19,11 +19,11 @@ Check that you can access R from Terminal (simply type 'R' in your Terminal to g
  
 2. Make sure there are three files in the folder:
 
-•	make_table_for_SCFAs_raw_data_Shimadzu_v2.sh
+    •	make_table_for_SCFAs_raw_data_Shimadzu_v2.sh
 
-•	SCFAs_v2.R
+    •	SCFAs_v2.R
 
-•	ASCIIData.txt (replace your own data file here, which can have a different name)
+    •	ASCIIData.txt (replace your own data file here, which can have a different name)
 
 3. In Terminal, type in “bash make_table_for_SCFAs_raw_data_Shimadzu_v2.sh” 
  
