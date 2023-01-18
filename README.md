@@ -29,7 +29,7 @@ Check that you can access R from Terminal (simply type 'R' in your Terminal to g
  
 4. Following the instruction pop-up from the terminal. First, you will need to confirm the working directory of your data file and script files.
  
-> **Note**: absolute path without any space is preferred. Be careful about spaces in your path. If you have spaces in your path, add “\” before any space. (e.g.: “/User/Desktop/example\ file ”)
+> Note: absolute path without any space is preferred. Be careful about spaces in your path. If you have spaces in your path, add “\” before any space. (e.g.: “/User/Desktop/example\ file ”)
 
 5. Then, you will need to type in your data file name (with extension name) and hit enter. (e.g. ASCIIData.txt). Be careful about spaces in file names as well. 
 
