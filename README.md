@@ -15,9 +15,9 @@ E.g., linux/unix, mac or Windows-Subsystem-for-Linux (WSL)
 Check that you can access R from Terminal (simply type 'R' in your Terminal to get the version information; otherwise, please install R first [https://cran.r-project.org].
 
 ## Steps:
-1. Open a new Terminal on your computer and change directory to the path of your scripts and data file (e.g. change to the path of ‘example’ folder on Desktop). 
+1. Launch a new Terminal window and navigate to the path of your scripts and data files (e.g., cd /Users/yourname/Desktop/example_folder).
  
-2. Make sure there are three files in the folder:
+2. Check that the folder contains three files:
 
     •	make_table_for_SCFAs_raw_data_Shimadzu_v2.sh
 
@@ -25,12 +25,14 @@ Check that you can access R from Terminal (simply type 'R' in your Terminal to g
 
     •	ASCIIData.txt (replace your own data file here, which can have a different name)
 
-3. In Terminal, type in “bash make_table_for_SCFAs_raw_data_Shimadzu_v2.sh” 
+3. In Terminal, type “bash make_table_for_SCFAs_raw_data_Shimadzu_v2.sh” 
  
-4. Following the instruction pop-up from the terminal. First, you will need to enter a working directory of your data file and script files.
+4. Following the instruction pop-up from the terminal. First, you will need to confirm the working directory of your data file and script files.
  
-Note: absolute path without any space is preferred. Be careful about spaces in your path. If you have spaces in your path, add “\” before any space. (e.g.: “/User/Desktop\ file/example”. 
+> Note: absolute path without any space is preferred. Be careful about spaces in your path. If you have spaces in your path, add “\” before any space. (e.g.: “/User/Desktop\ file/example”. 
+
 5. Then, you will need to type in your data file name (with extension name) and hit enter. (e.g. ASCIIData.txt). Be careful about spaces in file names as well. 
+
 6. You can now find the summary SCFAs table in the “out” folder of your current folder.
 
 
