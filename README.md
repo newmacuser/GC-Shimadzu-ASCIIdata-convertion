@@ -18,9 +18,13 @@ Check that you can access R from Terminal (simply type 'R' in your Terminal to g
 1. Open a new Terminal on your computer and change directory to the path of your scripts and data file (e.g. change to the path of ‘example’ folder on Desktop). 
  
 2. Make sure there are three files in the folder:
+
 •	make_table_for_SCFAs_raw_data_Shimadzu_v2.sh
+
 •	SCFAs_v2.R
+
 •	ASCIIData.txt (replace your own data file here, which can have a different name)
+
 3. In Terminal, type in “bash make_table_for_SCFAs_raw_data_Shimadzu_v2.sh” 
  
 4. Following the instruction pop-up from the terminal. First, you will need to enter a working directory of your data file and script files.
