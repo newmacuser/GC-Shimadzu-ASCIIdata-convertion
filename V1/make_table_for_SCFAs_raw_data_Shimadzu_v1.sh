@@ -24,7 +24,7 @@ main () {
     grep -A 8 "\[Compound Results(Ch1)\]" $name > temp/compounds.txt
     grep -A 3 "\[Header\]" $name > temp/header.txt
     test
-    R --vanilla -f SCFAs_v1.R --args $dir
+    R --vanilla -f SCFAs_v1.R --args "$dir"
   else
     echo -e "Wrong file name, ERROR exit"
     exit 0
