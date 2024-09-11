@@ -15,6 +15,9 @@ read.table("header.txt", fill = T, sep = "\t", row.names = NULL) %>%
   select("X.Header.") %>%
   slice(rep(1:n(), each = 14)) %>%
   bind_cols(table.A) %>%
+  group_by(V2) %>%
+  mutate(row = row_number()) %>%
   pivot_wider(names_from = "V2", values_from = "V6") %>%
+  select(-row) %>%
   rename("SampleID" = "X.Header.") %>%
   write.csv("../out/output.concentration.csv", row.names = F)
