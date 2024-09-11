@@ -2,7 +2,7 @@
 ## Purpose:
 This is a shell script for parsing concentration information of SCFAs from Shimadzu GC ASCII data output.
 
-Only the modified GC technique (created by Miguel in Fall 2022) that measures 14 volatile chemicals is compatible with the script.
+It is compatible **only** with the modified GC technique (developed by Miguel in Fall 2022), which measures 14 volatile chemicals. If you're using the GC method for 5 SCFA compounds (the older/classic method), please refer to the scripts in folder V1.
 (To acquire the appropriate ASCIIData output file, please refer to Miguel's data analysis methodology [https://purdue.app.box.com/folder/131931315173]).
 
 The output summary table has 15 columns with the following headers: “SampleID”, "Acetone", "Methanol", "2-Propanol", "Ethanol", "1-butanol", “Acetate”, “Propionate”, “Isobutyrate”, “Butyrate”, “Isovalerate”, "Valerate", “Isocorporate”, "Hexanoic acid", "Heptanoic acid". Compound concentrations are represented by the values in the table (mM). 
