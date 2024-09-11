@@ -32,14 +32,14 @@ main () {
 }
 
 
-if [[ $dir == "" ]]
+if [[ "$dir" == "" ]]
 then
-  cd $PWD & dir=$PWD
-  echo -e "Make sure the working directory you just entered is correct": $PWD
+  cd "$PWD" && dir="$PWD"
+  echo -e "Make sure the working directory you just entered is correct": "$PWD"
   main
   echo -e "Finish"
 else
-  cd $dir
+  cd "$dir"
   echo -e "Make sure the working directory you just entered is correct": $PWD
   main
   echo -e "Finish"
