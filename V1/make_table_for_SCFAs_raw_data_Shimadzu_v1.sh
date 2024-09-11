@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\n"
 echo -e "This is a shell script that processes Shimadzu GC ASCIIData output."
-echo -e "Make sure the ASCIIData file and the SCFAs_v2.R script are in the same directory"
+echo -e "Make sure the ASCIIData file and the SCFAs_v1.R script are in the same directory"
 echo -e "Here is your current directory": $PWD "(Enter to confirm or put in a valid working path, e.g. /Users/your_name/Desktop/example)"
 read dir
 
