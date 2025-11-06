@@ -9,15 +9,19 @@ table.A <- read.table("compounds.txt", fill = T, sep = "\t") %>%
   select(V2, V6) %>%
   filter(V2 != "") 
 
-read.table("header.txt", fill = T, sep = "\t", row.names = NULL) %>%
-  as_tibble() %>%
-  filter(row.names == "Data File Name") %>%
-  select("X.Header.") %>%
+table.B <- read.table("header.txt", fill = T, sep = "\t", row.names = NULL) %>%
+  as_tibble()
+
+table.B2 <- table.B %>%
+  filter( .data[[ names(table.B)[1] ]] == "Data File Name") %>%
+  select(names(table.B)[2]) %>%
   slice(rep(1:n(), each = 6)) %>%
-  bind_cols(table.A) %>%
-  group_by(V2) %>%
+  bind_cols(table.A) 
+
+table.B2 %>%
+  group_by(.data[[ names(table.B2)[2] ]]) %>%
   mutate(row = row_number()) %>%
-  pivot_wider(names_from = "V2", values_from = "V6") %>%
+  pivot_wider(names_from = names(table.B2)[2], values_from = names(table.B2)[3]) %>%
   select(-row) %>%
-  rename("SampleID" = "X.Header.") %>%
+  rename_with(~ "SampleID", .cols = 1) %>%
   write.csv("../out/output.concentration.csv", row.names = F)
