@@ -20,8 +20,9 @@ main () {
   read name
   if [[ -f "$name" ]]; then
     echo -e "running..."
+    rm -r temp out
     mkdir temp out
-    grep -A 16 "\[Compound Results(Ch1)\]" $name > temp/compounds.txt
+    awk '{sub(/\r$/,"")} /^\[Compound Results\(Ch1\)\]/ {if (seen) print "--"; seen=1; printing=1; print; next} printing && /^\[/ {printing=0} printing' $name > temp/compounds.txt
     grep -A 3 "\[Header\]" $name > temp/header.txt
     test
     R --vanilla -f SCFAs_v2.R --args "$dir"
